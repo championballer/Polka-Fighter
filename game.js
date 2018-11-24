@@ -16,13 +16,12 @@ var winningScore = 100;
 function addItems() {
   items = game.add.physicsGroup();
 
-  var x=375,y=300;
+  var coordinates = [[375,400],[575,500],[225,500],[100,250],[575,150],[525,300],[650,250],[225,200],[375,100]];
 
   for(var i=0;i<9;i++)
   {
-      createItem(x, y, 'coin');
-      x+=30;
-      y+=20;  
+      createItem(coordinates[i][0],coordinates[i][1],'coin');
+
   }
   
 }
@@ -31,13 +30,12 @@ function addItems() {
 function addPlatforms() {
   platforms = game.add.physicsGroup();
 
-  var x=450,y=150;
-
+  var coordinates = [[350,200]];
   for(var i=0;i<9;i++)
   {
-      platforms.create(x, y, 'platform');
-      x+=30;
-      y+=20;  
+      platforms.create(coordinates[0][0],coordinates[0][1], 'platform');
+      coordinates[0][0]+=30;
+      coordinates[0][1]+=20;  
   }
  
   platforms.setAll('body.immovable', true);
