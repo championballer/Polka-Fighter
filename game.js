@@ -15,7 +15,16 @@ var winningScore = 100;
 // add collectable items to the game
 function addItems() {
   items = game.add.physicsGroup();
-  createItem(375, 300, 'coin');
+
+  var x=375,y=300;
+
+  for(var i=0;i<9;i++)
+  {
+      createItem(x, y, 'coin');
+      x+=30;
+      y+=20;  
+  }
+  
 }
 
 // add platforms to the game
