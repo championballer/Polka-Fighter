@@ -89,7 +89,12 @@ function itemHandler(player, item) {
   }
 
   else if(item.key==='poison'){
-    currentScore = currentScore - 10;
+    currentScore = currentScore - 25;
+  }
+
+  else if(item.key==='star')
+  {
+    currentScore = currentScore + 25;
   }
   item.kill();
   if (currentScore === winningScore) {
