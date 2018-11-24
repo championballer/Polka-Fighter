@@ -8,3 +8,7 @@ Launching index.html won't be enough and the above stated thing needs to be done
 To setup files on Web Server for Chrome extension, only the folder location on the machine needs to be marked. 
 
 The final goal is to implement a reinforcement agent to play this game, and excel at it. This is expected to use concepts like QLearning, Convolutional Neural Networks among others, and that is where the fun actually lies.
+
+# Screenshots
+![ScreenShot2](https://raw.github.com/championballer/PolkaFighter/master/Screenshot2.png)
+![ScreenShot1](https://raw.github.com/championballer/PolkaFighter/master/Screenshot1.png)
