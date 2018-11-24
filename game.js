@@ -16,13 +16,23 @@ var winningScore = 100;
 function addItems() {
   items = game.add.physicsGroup();
 
-  var coordinates = [[375,400],[575,500],[225,500],[100,250],[575,150],[525,300],[650,250],[225,200],[375,100]];
+  /*var coordinates = [[375,400],[575,500],[225,500],[100,250],[575,150],[525,300],[650,250],[225,200],[375,100]];
 
   for(var i=0;i<9;i++)
   {
     createItem(coordinates[i][0],coordinates[i][1],'coin');
 
-  }
+  }*/
+
+  createItem(375, 400, 'coin');
+  createItem(575, 500, 'coin');
+  createItem(225, 500, 'coin');
+  createItem(100, 250, 'coin');
+  createItem(575, 150, 'coin');
+  createItem(525, 300, 'coin');
+  createItem(650, 250, 'coin');
+  createItem(225, 200, 'coin');
+  createItem(375, 100, 'coin');
   
 }
 
@@ -30,12 +40,25 @@ function addItems() {
 function addPlatforms() {
   platforms = game.add.physicsGroup();
 
-  var coordinates = [[450,550],[100,550],[300,450],[250,150],[50,300],[150,250],[650,300],[550,200],[300,450],[400,350],[100,100]];
+  /*var coordinates = [[450,550],[100,550],[300,450],[250,150],[50,300],[150,250],[650,300],[550,200],[300,450],[400,350],[100,100]];
   for(var i=0;i<11;i++)
   {
       platforms.create(coordinates[i][0],coordinates[i][1], 'platform');
  
-  }
+  }*/
+
+  platforms.create(450, 550, 'platform');
+  platforms.create(100, 550, 'platform');
+  platforms.create(300, 450, 'platform');
+  platforms.create(250, 150, 'platform');
+  platforms.create(50, 300, 'platform');
+  platforms.create(150, 250, 'platform');
+  platforms.create(650, 300, 'platform');
+  platforms.create(550, 200, 'platform2');
+  platforms.create(300, 450, 'platform2');
+  platforms.create(400, 350, 'platform2');
+  platforms.create(100, 100, 'platform2');
+  platforms.setAll('body.immovable', true);
  
   platforms.setAll('body.immovable', true);
 }
@@ -87,7 +110,7 @@ window.onload = function () {
     
     //Load images
     game.load.image('platform', 'platform_1.png');
-    
+    game.load.image('platform2','platform_2.png');
     //Load spritesheets
     game.load.spritesheet('player', 'chalkers.png', 48, 62);
     game.load.spritesheet('coin', 'coin.png', 36, 44);
