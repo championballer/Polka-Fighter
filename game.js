@@ -20,7 +20,7 @@ function addItems() {
 
   for(var i=0;i<9;i++)
   {
-      createItem(coordinates[i][0],coordinates[i][1],'coin');
+    createItem(coordinates[i][0],coordinates[i][1],'coin');
 
   }
   
@@ -30,12 +30,11 @@ function addItems() {
 function addPlatforms() {
   platforms = game.add.physicsGroup();
 
-  var coordinates = [[350,200]];
-  for(var i=0;i<9;i++)
+  var coordinates = [[450,550],[100,550],[300,450],[250,150],[50,300],[150,250],[650,300],[550,200],[300,450],[400,350],[100,100]];
+  for(var i=0;i<11;i++)
   {
-      platforms.create(coordinates[0][0],coordinates[0][1], 'platform');
-      coordinates[0][0]+=30;
-      coordinates[0][1]+=20;  
+      platforms.create(coordinates[i][0],coordinates[i][1], 'platform');
+ 
   }
  
   platforms.setAll('body.immovable', true);
