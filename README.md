@@ -10,5 +10,5 @@ To setup files on Web Server for Chrome extension, only the folder location on t
 The final goal is to implement a reinforcement agent to play this game, and excel at it. This is expected to use concepts like QLearning, Convolutional Neural Networks among others, and that is where the fun actually lies.
 
 # Screenshots
-![ScreenShot2](https://raw.github.com/championballer/PolkaFighter/master/Screenshot2.png)
-![ScreenShot1](https://raw.github.com/championballer/PolkaFighter/master/Screenshot1.png)
+![ScreenShot2](https://raw.github.com/championballer/PolkaFighter/master/Screenshots/Screenshot2.png)
+![ScreenShot1](https://raw.github.com/championballer/PolkaFighter/master/Screenshots/Screenshot1.png)
