@@ -1,4 +1,4 @@
-# PolkaFighter
+# Polka Fighter
 A web based game built in Javascript using Phaser.js
 
 _Note: Launching index.html won't be enough. The game can be used using a local server based in google chrome using an extension by the name of Web Server for Chrome.To setup files on Web Server for Chrome extension, only the folder location on the machine needs to be marked._
